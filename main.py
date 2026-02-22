@@ -1,7 +1,7 @@
 import requests
 import os
 from twilio.rest import Client
-from twilio.http.http_client import twilioHttpClient
+from twilio.http.http_client import TwilioHttpClient
 
 proxy_client = TwilioHttpClient()
 proxy_client.session.proxies = {'https': os.environ['https_proxy']}
